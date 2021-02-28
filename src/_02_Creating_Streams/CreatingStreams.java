@@ -16,17 +16,18 @@ public class CreatingStreams {
 		intList.add(2);
 		intList.add(3);
 		intList.add(4);
-		
+		Stream<Integer> intList1 = intList.stream();
 		Stack<Random> randStack = new Stack<Random>();
 		randStack.push(new Random());
 		randStack.push(new Random());
 		randStack.push(new Random());
 		randStack.push(new Random());
-		
+		Stream<Random> randStack1 = randStack.stream();	
 		ArrayDeque<Double> dQueue = new ArrayDeque<Double>();
 		dQueue.push(0.0);
 		dQueue.push(1.0);
 		dQueue.push(2.0);
 		dQueue.push(3.0);
+		Stream<Double> dQueue1 = dQueue.stream();
 	}
 }
